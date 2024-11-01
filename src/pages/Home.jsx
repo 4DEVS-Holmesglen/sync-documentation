@@ -64,17 +64,52 @@ const Home = () => {
         </Col>
       </Row>
 
-      <AlertDialog 
-        title="Sync AlertDialog" 
-        body="This is the custom alert from Sync!" 
-        status="successDark" 
-        btnColor="white" 
+      {/* AlertDialog Section */}
+      <Row className="mb-5 mt-5 justify-content-center">
+        <h2 className='text-center text-white py-5'>Alert Dialog Collections</h2>
+        <Col xs={12} md={6}>
+          <Row className="justify-content-center">
+            <Col xs={12}>
+                <div className="mb-2">
+             <AlertDialog 
+                title="Sync AlertDialog" 
+                body="Hold up! Looks like a couple fields need a bit more love." 
+                status="successDark" 
+                btnColor="white" 
         //alertType="success"
-        children="Open The alert" 
-        isOpen={isOpen} // Pass the state variable here
-        onClose={closeDialog}
-        buttonVariant="success"
-      />
+                children="Open The alert" 
+                isOpen={isOpen} // Pass the state variable here
+                onClose={closeDialog}
+                buttonVariant="success" 
+                />
+
+             <AlertDialog 
+                title="Sync AlertDialog" 
+                body="Hold up! Looks like a couple fields need a bit more love." 
+                status="defaultDark" 
+                btnColor="white" 
+        //alertType="success"
+                children="Open The alert" 
+                isOpen={isOpen} // Pass the state variable here
+                onClose={closeDialog}
+                buttonVariant="default" 
+                />
+                <AlertDialog 
+                title="Sync AlertDialog" 
+                body="Hold up! Looks like a couple fields need a bit more love." 
+                status="warningDark" 
+                btnColor="white" 
+        //alertType="success"
+                children="Open The alert" 
+                isOpen={isOpen} // Pass the state variable here
+                onClose={closeDialog}
+                buttonVariant="warning" 
+                />  
+                </div>  
+            </Col>
+          </Row>
+        </Col>
+      </Row>
     </Container>
   );
 };
