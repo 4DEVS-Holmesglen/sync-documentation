@@ -27,7 +27,7 @@ export const brandLink = style({
 })
 
 export const logo = style({
-  width: 100,
+  width: '150px',
 })
 
 export const logoTextBox = style({

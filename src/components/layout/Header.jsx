@@ -1,5 +1,5 @@
 import * as styles from './Header.css';
-import logoImg from '../../assets/images/4devswhite.png'
+import logoImg from '../../assets/images/Frame 4.png'
 
 import { Link } from 'react-router-dom';
 import { Container, Navbar, Nav } from "react-bootstrap";
