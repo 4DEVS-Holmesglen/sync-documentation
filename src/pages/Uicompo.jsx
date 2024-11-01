@@ -36,11 +36,10 @@ const Uicompo = () => {
     title: "Default Alert",
     body: "This is a default alert message.",
     status: "default",
+    buttonVariant: "primary",
     children: "Open The Dialog",
     btnColor: "#ffffff",
-    alertType: "default",
     isOpen: false,
-    buttonVariant: "primary",
   });
 
 
@@ -68,9 +67,9 @@ import { Button, Alert, AlertDialog } from '@holmesdev/sync';
 <AlertDialog 
   title="${alertDialogProps.title}" 
   body="${alertDialogProps.body}" 
-  status="${alertDialogProps.status}" 
+  status="${alertDialogProps.status}"
+  buttonVariant="${alertDialogProps.buttonVariant}"  
   btnColor="${alertDialogProps.btnColor}" 
-  alertType="${alertDialogProps.alertType}" 
   isOpen={${alertDialogProps.isOpen}} 
   onClose={closeDialog} 
 />`;
@@ -254,7 +253,7 @@ import { Button, Alert, AlertDialog } from '@holmesdev/sync';
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="alertDialogBtnColor">
-              <Form.Label>Button Color (Hex)</Form.Label>
+              <Form.Label>Close Button Icon Color (Hex)</Form.Label>
               <Form.Control
                 type="color"
                 value={alertDialogProps.btnColor}
@@ -262,24 +261,7 @@ import { Button, Alert, AlertDialog } from '@holmesdev/sync';
                 className={styles.input}
               />
             </Form.Group>
-            <Form.Group controlId="alertDialogType">
-              <Form.Label>Alert Dialog Type</Form.Label>
-              <Form.Control
-                as="select"
-                value={alertDialogProps.alertType}
-                onChange={(e) => setAlertDialogProps({ ...alertDialogProps, alertType: e.target.value })}
-                className={styles.input}
-              >
-                <option value="default">Default</option>
-                <option value="primary">Primary</option>
-                <option value="success">Success</option>
-                <option value="warning">Warning</option>
-                <option value="defaultDark">Default Dark</option>
-                <option value="primaryDark">Primary Dark</option>
-                <option value="successDark">Success Dark</option>
-                <option value="warningDark">Warning Dark</option>
-              </Form.Control>
-            </Form.Group>
+            
             <Form.Group controlId="alertDialogButtonVariant">
               <Form.Label>Button Variant</Form.Label>
               <Form.Control
@@ -303,14 +285,14 @@ import { Button, Alert, AlertDialog } from '@holmesdev/sync';
                 className={styles.input}
               />
             </Form.Group>
-            <Form.Group controlId="alertDialogOpenState">
+           { /* <Form.Group controlId="alertDialogOpenState">
               <Form.Check
                 type="checkbox"
                 label="Is Open"
                 checked={alertDialogProps.isOpen}
                 onChange={(e) => setAlertDialogProps({ ...alertDialogProps, isOpen: e.target.checked })}
               />
-            </Form.Group>
+  </Form.Group> */}
           </Col>
         </Row>
       </Container>
