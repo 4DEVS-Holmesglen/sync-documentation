@@ -1,21 +1,10 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
-import { Button as SyncButton, Alert } from '@holmesdev/sync';
-import { AlertDialog } from 'sync-compo-test-round2';
+import { Button, Alert, AlertDialog } from '@holmesdev/sync';
 import TuBox from '../components/common/TuBox';
 import * as styles from './Home.css';
 
-// Props for the alerts
-const alertProps = { title: "Primary Alert", body: "This is a primary alert.", type: "successDark" };
-
-// Button variants
-const buttonVariants = [
-  { text: "Default Button", variant: "default" },
-  { text: "Primary Button", variant: "primary" },
-  { text: "Success Button", variant: "success" },
-  { text: "Warning Button", variant: "warning" },
-];
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,11 +29,28 @@ const Home = () => {
       {/* Alert & TuBox Section */}
       <Row className="mb-5 mt-5 justify-content-center">
         <h2 className='text-center text-white py-5'>AlertBoxes</h2>
-        <Col xs={12} md={6}>
-          <Alert title="Sync Alert" body="This is the default alert from Sync!" type="defaultDark" />
-          <Alert title="Sync Alert" body="This is the primary alert from Sync!" type="primaryDark" />
-          <Alert title="Sync Alert" body="This is the success alert from Sync!" type="successDark" />
-          <Alert title="Sync Alert" body="This is the warning alert from Sync!" type="warningDark" />
+        <Col xs={12} md={5}>
+        <Alert
+         title="Confirm"
+         body="Please confirm the request."
+         status="defaultDark" 
+         />
+         <Alert
+         title="Confirm"
+         body="Please confirm the request."
+         status="primaryDark" 
+         />
+         <Alert
+         title="Confirm"
+         body="Please confirm the request."
+         status="successDark" 
+         />
+         <Alert
+         title="Confirm"
+         body="Please confirm the request."
+         status="warningDark" 
+         />
+
         </Col>
       </Row>
 
@@ -54,11 +60,36 @@ const Home = () => {
         <Col xs={12} md={6} className="text-center">
           <Row className="justify-content-center">
             <Col xs={12} className="text-center">
-              {buttonVariants.map((btnProps, index) => (
-                <div key={index} className="mb-2">
-                  <SyncButton text={btnProps.text} variant={btnProps.variant} />
-                </div>
-              ))}
+
+            <Button
+             //children
+             type="button"
+             path="/home"
+             variant="default"
+             hoverColor="green"
+             >Sync Button</Button>
+
+            <Button
+             type="button"
+             path="/home"
+             variant="primary"
+             hoverColor="green"
+             >Sync Button</Button>
+
+            <Button
+             type="button"
+             path="/home"
+             variant="success"
+             hoverColor="green"
+             >Sync Button</Button>
+
+            <Button
+             type="button"
+             path="/home"
+             variant="warning"
+             hoverColor="green"
+             >Sync Button </Button>
+
             </Col>
           </Row>
         </Col>
@@ -76,9 +107,8 @@ const Home = () => {
                 body="Hold up! Looks like a couple fields need a bit more love." 
                 status="successDark" 
                 btnColor="white" 
-        //alertType="success"
                 children="Open The alert" 
-                isOpen={isOpen} // Pass the state variable here
+                isOpen={isOpen}
                 onClose={closeDialog}
                 buttonVariant="success" 
                 />
@@ -86,22 +116,20 @@ const Home = () => {
              <AlertDialog 
                 title="Sync AlertDialog" 
                 body="Hold up! Looks like a couple fields need a bit more love." 
-                status="defaultDark" 
+                status="default" 
                 btnColor="white" 
-        //alertType="success"
                 children="Open The alert" 
-                isOpen={isOpen} // Pass the state variable here
+                isOpen={isOpen}
                 onClose={closeDialog}
                 buttonVariant="default" 
                 />
                 <AlertDialog 
                 title="Sync AlertDialog" 
                 body="Hold up! Looks like a couple fields need a bit more love." 
-                status="warningDark" 
+                status="warning" 
                 btnColor="white" 
-        //alertType="success"
                 children="Open The alert" 
-                isOpen={isOpen} // Pass the state variable here
+                isOpen={isOpen}
                 onClose={closeDialog}
                 buttonVariant="warning" 
                 />  

@@ -1,8 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import { Row, Col, Form } from 'react-bootstrap';
-import { Button as SyncButton, Alert } from '@holmesdev/sync';
-import { AlertDialog } from 'sync-compo-test-round2';
+import { Button as SyncButton, Alert, AlertDialog } from '@holmesdev/sync';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import * as styles from './Uicompo.css';
@@ -140,20 +139,6 @@ import { Button, Alert, AlertDialog } from '@holmesdev/sync';
         <Alert {...alertProps} className="mb-3" />
         <Row className="mb-5">
           <Col xs={12} md={6}>
-            <div className={styles.card}>
-              <div className={styles.cardHeader}>AlertBox</div>
-              <p className={styles.description}>
-                Customize our alert box to adapt in your project!
-              </p>
-              <SyntaxHighlighter language="jsx" style={customSolarizedLight}>
-                {alertCode}
-              </SyntaxHighlighter>
-              <ul className={styles.propList}>
-                <li><span className={styles.keyword}>Title:</span> <span className={styles.string}>Required string for the alert title</span></li>
-                <li><span className={styles.keyword}>Body:</span> <span className={styles.string}>Required string for the alert body</span></li>
-                <li><span className={styles.keyword}>Type:</span> One of <span className={styles.string}>“default”, “primary”, “success”, “warning”, “defaultDark”, “primaryDark”</span></li>
-              </ul>
-            </div>
           </Col>
           <Col xs={12} md={6}>
             <Form.Group controlId="alertTitle">

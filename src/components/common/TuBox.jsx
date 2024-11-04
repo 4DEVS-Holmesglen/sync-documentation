@@ -1,6 +1,6 @@
 import * as styles from './TuBox.css'
 import { Link } from 'react-router-dom'
-import { Button } from 'sync-compo-test-round2'
+import { Button } from '@holmesdev/sync'
 
 
 const TuBox = ({ title, content, link, linkTo }) => {

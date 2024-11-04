@@ -295,18 +295,13 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.57.0.tgz"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
-"@holmesdev/sync@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@holmesdev/sync/-/sync-1.0.0.tgz"
-  integrity sha512-W5Qg9UtO5LnC6y4GybP4QtL58eePX/H4HQNAH8PU5Ji7kytbG3PHi1X644IZDFimWWvVNGKLiu+qxotIbtFVtA==
+"@holmesdev/sync@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@holmesdev/sync/-/sync-1.0.2.tgz"
+  integrity sha512-Fv8IJxrs6zjW5ZWKJVdfwERvZAAbc96snvXPjLqqcRKQTjNvIyS5RcRZfg09LTCvBRhMOrrHpoRFxm5YDCSxXQ==
   dependencies:
-    bootstrap "^5.3.3"
-    react-bootstrap "^2.10.5"
-    react-bootstrap-icons "^1.11.4"
+    prop-types "^15.8.1"
     react-icons "^5.3.0"
-    rollup "^4.24.0"
-    styled-components "^6.1.13"
-    terser "^5.36.0"
 
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
@@ -2450,7 +2445,7 @@ prop-types-extra@^1.1.0:
     react-is "^16.3.2"
     warning "^4.0.0"
 
-prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.6.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -2481,14 +2476,7 @@ queue-microtask@^1.2.2:
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-react-bootstrap-icons@^1.11.4:
-  version "1.11.4"
-  resolved "https://registry.npmjs.org/react-bootstrap-icons/-/react-bootstrap-icons-1.11.4.tgz"
-  integrity sha512-lnkOpNEZ/Zr7mNxvjA9efuarCPSgtOuGA55XiRj7ASJnBjb1wEAdtJOd2Aiv9t07r7FLI1IgyZPg9P6jqWD/IA==
-  dependencies:
-    prop-types "^15.7.2"
-
-react-bootstrap@^2.10.4, react-bootstrap@^2.10.5:
+react-bootstrap@^2.10.4:
   version "2.10.5"
   resolved "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.10.5.tgz"
   integrity sha512-XueAOEn64RRkZ0s6yzUTdpFtdUXs5L5491QU//8ZcODKJNDLt/r01tNyriZccjgRImH1REynUc9pqjiRMpDLWQ==
@@ -2514,7 +2502,7 @@ react-copy-to-clipboard@^5.1.0:
     copy-to-clipboard "^3.3.1"
     prop-types "^15.8.1"
 
-react-dom@^18.3.1, "react-dom@>= 16.8.0", react-dom@>=16.14.0, react-dom@>=16.6.0, react-dom@>=16.8, react-dom@>=18:
+react-dom@^18.3.1, "react-dom@>= 16.8.0", "react-dom@>= 18", react-dom@>=16.14.0, react-dom@>=16.6.0, react-dom@>=16.8, react-dom@>=18:
   version "18.3.1"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz"
   integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
@@ -2586,7 +2574,7 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@*, "react@^15.3.0 || 16 || 17 || 18", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", react@^18.3.1, "react@>= 0.14.0", "react@>= 16.8.0", react@>=0.14.0, react@>=15.0.0, react@>=16.14.0, react@>=16.6.0, react@>=16.8, react@>=16.8.0, react@>=16.8.6, react@>=18:
+react@*, "react@^15.3.0 || 16 || 17 || 18", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", react@^18.3.1, "react@>= 0.14.0", "react@>= 16.8.0", "react@>= 18", react@>=0.14.0, react@>=15.0.0, react@>=16.14.0, react@>=16.6.0, react@>=16.8, react@>=16.8.0, react@>=18:
   version "18.3.1"
   resolved "https://registry.npmjs.org/react/-/react-18.3.1.tgz"
   integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
@@ -2693,7 +2681,7 @@ rimraf@^3.0.2:
   dependencies:
     glob "^7.1.3"
 
-rollup@^4.13.0, rollup@^4.24.0:
+rollup@^4.13.0:
   version "4.24.0"
   resolved "https://registry.npmjs.org/rollup/-/rollup-4.24.0.tgz"
   integrity sha512-DOmrlGSXNk1DM0ljiQA+i+o0rSLhtii1je5wgk60j49d1jHT5YYttBv1iWOnYSTG+fZZESUOSNiAl89SIet+Cg==
@@ -2894,7 +2882,7 @@ strip-json-comments@^3.1.1:
   resolved "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
-styled-components@^6.1.13:
+styled-components@^6.1.13, "styled-components@>= 6":
   version "6.1.13"
   resolved "https://registry.npmjs.org/styled-components/-/styled-components-6.1.13.tgz"
   integrity sha512-M0+N2xSnAtwcVAQeFEsGWFFxXDftHUD7XrKla06QbpUMmbmtFBMMTcKWvFXtWxuD5qQkB8iU5gk6QASlx2ZRMw==
@@ -2946,14 +2934,6 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-sync-compo-test-round2@^1.1.8:
-  version "1.1.8"
-  resolved "https://registry.npmjs.org/sync-compo-test-round2/-/sync-compo-test-round2-1.1.8.tgz"
-  integrity sha512-QnvVBpxtW7LhiLy0fCkFMXHMNXLKC949ty8THz+9d2lty3Nj93S/nxoVbWZxghUAqv7QdzNi4ItKSKEfQjV+yg==
-  dependencies:
-    react-icons "^5.3.0"
-    styled-components "^6.1.13"
-
 tailwindcss@^3.4.4:
   version "3.4.6"
   resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.6.tgz"
@@ -2982,7 +2962,7 @@ tailwindcss@^3.4.4:
     resolve "^1.22.2"
     sucrase "^3.32.0"
 
-terser@^5.36.0, terser@^5.4.0:
+terser@^5.4.0:
   version "5.36.0"
   resolved "https://registry.npmjs.org/terser/-/terser-5.36.0.tgz"
   integrity sha512-IYV9eNMuFAV4THUspIRXkLakHnV6XO7FEdtKjf/mDyrnqUg9LnlOn6/RwRvM9SZjR4GUq8Nk8zj67FzVARr74w==
