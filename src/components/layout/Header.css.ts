@@ -4,7 +4,7 @@ import { vars } from '../../styles/themes.css';
 export const navbar = style({
   fontFamily: vars.fonts.brand,
   backgroundColor: vars.colors.complementary,
-  padding: `${vars.space['3x']} 0`,
+  padding: 0,
   transition: "background 0.2s ease-in, color 0.2s ease-in",
   position: 'relative',
   ':after': {
@@ -27,7 +27,7 @@ export const brandLink = style({
 })
 
 export const logo = style({
-  width: '150px',
+  width: '100px',
 })
 
 export const logoTextBox = style({

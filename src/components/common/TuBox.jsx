@@ -9,7 +9,7 @@ const TuBox = ({ title, content, link, linkTo }) => {
       <h1 className={styles.boxTitle}>{title}</h1>
       <p className={styles.boxPara}>{content}</p>
       {link && (<div className={styles.boxButton}>
-        <Button className={styles.linkHero} path={linkTo} text={link} variant="default">{link}</Button>
+        <Button className={styles.linkHero} path={linkTo} text={link} variant="default" hoverColor="#1e293b">{link}</Button>
       </div>
       )}
     </div>
