@@ -12,7 +12,7 @@ const Home = () => {
         title="Alerts & Buttons"
         content="Add some flair to your projects by trying our dazzling yet practical Button & Alert components! Built with user interactivity and accessibility in mind, choose from an array of themes/variant types pertaining to each level of action severity, along with customizable options to tailor and enhance the functionality of each component."
         link="Get Started"
-        linkTo="https://github.com/4DEVS-Holmesglen/4devs-alert-btn-component"
+        linkTo="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main"
       />
       
       {/* Alert & TuBox Section */}
@@ -21,25 +21,25 @@ const Home = () => {
         <Col xs={12} md={5}>
         <Alert
         // title is the title text for the alert box
-         title="Confirm"
+         title="Sync Alert"
          // body is the paragraph or text in the alert
-         body="Please confirm the request."
+         body="This is an Alert from Sync. Feel free to try it out!"
          // status is the variant of the alert box 
          status="defaultDark" 
          />
          <Alert
-         title="Confirm"
-         body="Please confirm the request."
+         title="Sync Alert"
+         body="This is an Alert from Sync. Feel free to try it out!"
          status="primaryDark" 
          />
          <Alert
-         title="Confirm"
-         body="Please confirm the request."
+         title="Sync Alert"
+         body="This is an Alert from Sync. Feel free to try it out!"
          status="successDark" 
          />
          <Alert
-         title="Confirm"
-         body="Please confirm the request."
+         title="Sync Alert"
+         body="This is an Alert from Sync. Feel free to try it out!"
          status="warningDark" 
          />
 
@@ -58,7 +58,7 @@ const Home = () => {
              // type is to set the type of button such as submit, button, reset
              type="button"
              // path is allows users to pass external link or internal link for navigation
-             path="/home"
+             path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main"
              // variant is the variant or color of the Button
              variant="default"
              // hoverColor is the hover color for the Button and allows users to pass Hex code to change the color
@@ -67,21 +67,21 @@ const Home = () => {
 
             <Button
              type="button"
-             path="/home"
+             path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main"
              variant="primary"
              hoverColor="#172554"
              >Sync Button</Button>
 
             <Button
              type="button"
-             path="/home"
+             path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main"
              variant="success"
              hoverColor="green"
              >Sync Button</Button>
 
             <Button
              type="button"
-             path="/home"
+             path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main"
              variant="warning"
              hoverColor="#9f1239"
              >Sync Button </Button>
