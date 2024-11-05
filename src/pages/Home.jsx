@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Container>
       <TuBox
-        title="Alerts & Buttons"
+        title="Sync Ui Component"
         content="Add some flair to your projects by trying our dazzling yet practical Button & Alert components! Built with user interactivity and accessibility in mind, choose from an array of themes/variant types pertaining to each level of action severity, along with customizable options to tailor and enhance the functionality of each component."
         link="Get Started"
         linkTo="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main"
@@ -42,7 +42,7 @@ const Home = () => {
          body="This is an Alert from Sync. Feel free to try it out!"
          status="warningDark" 
          />
-
+        
         </Col>
       </Row>
 
@@ -53,6 +53,7 @@ const Home = () => {
           <Row className="justify-content-center">
             <Col xs={12} className="text-center">
 
+            <Col xs={12} className="text-center">
             <Button
             // children="Good" we pass children to outside so users can type the text via the Button like this <Button>Sync Button</Button>
              // type is to set the type of button such as submit, button, reset
@@ -64,6 +65,9 @@ const Home = () => {
              // hoverColor is the hover color for the Button and allows users to pass Hex code to change the color
              hoverColor="#1e293b"
              >Sync Button</Button>
+             </Col>
+
+             <Col xs={12} className="text-center">
 
             <Button
              type="button"
@@ -71,6 +75,8 @@ const Home = () => {
              variant="primary"
              hoverColor="#172554"
              >Sync Button</Button>
+             </Col>
+             <Col xs={12} className="text-center">
 
             <Button
              type="button"
@@ -78,12 +84,14 @@ const Home = () => {
              variant="success"
              hoverColor="green"
              >Sync Button</Button>
+             </Col>
+             <Col xs={12} className="text-center"></Col>
 
             <Button
              type="button"
              path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main"
              variant="warning"
-             hoverColor="#9f1239"
+             hoverColor="#7f1d1d"
              >Sync Button </Button>
 
             </Col>
@@ -103,7 +111,7 @@ const Home = () => {
                 body="Hold up! Looks like a couple fields need a bit more love." 
                 status="successDark" 
                 btnColor="white" 
-                hoverColor="#9f1239"
+                hoverColor="green"
                 children="Open The alert" 
                 buttonVariant="success" 
                 />
@@ -111,20 +119,22 @@ const Home = () => {
              <AlertDialog 
                 title="Sync AlertDialog" 
                 body="Hold up! Looks like a couple fields need a bit more love." 
-                status="default" 
+                status="defaultDark" 
                 btnColor="white" 
                 children="Open The alert" 
+                hoverColor="#1e293b"
                 buttonVariant="default" 
                 />
+
                 <AlertDialog
                 // Title of the Dialog 
                 title="Sync AlertDialog"
                 // Body description for Dialog 
                 body="Hold up! Looks like a couple fields need a bit more love."
                 // Status is the variant of the AlertDialog 
-                status="warning" 
+                status="warningDark" 
                 // hoverColor is a hover for open dialog button
-                hoverColor="#9f1239"
+                hoverColor="#7f1d1d"
                 // btnColor is the color of the close button or Icon X for close
                 btnColor="white" 
                 // children is the text for the open AlertDialog Button
