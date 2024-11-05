@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
 import { Button, Alert, AlertDialog } from '@holmesdev/sync';
 import TuBox from '../components/common/TuBox';
-import * as styles from './Home.css';
 
 
 const Home = () => {
