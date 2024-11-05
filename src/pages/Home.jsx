@@ -6,16 +6,6 @@ import TuBox from '../components/common/TuBox';
 
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDialog = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeDialog = () => {
-    setIsOpen(false);
-  };
-
   return (
     <Container>
       <TuBox
@@ -115,8 +105,6 @@ const Home = () => {
                 btnColor="white" 
                 hoverColor="#9f1239"
                 children="Open The alert" 
-                isOpen={isOpen}
-                onClose={closeDialog}
                 buttonVariant="success" 
                 />
 
@@ -126,8 +114,6 @@ const Home = () => {
                 status="default" 
                 btnColor="white" 
                 children="Open The alert" 
-                isOpen={isOpen}
-                onClose={closeDialog}
                 buttonVariant="default" 
                 />
                 <AlertDialog
@@ -144,9 +130,7 @@ const Home = () => {
                 // children is the text for the open AlertDialog Button
                 children="Open The alert" 
                 // isOpen is a function to open the Dialog
-                isOpen={isOpen}
                 // onClose is a function to close the Dialog
-                onClose={closeDialog}
                 // buttonVariant is a variant of open alert button
                 buttonVariant="warning" 
                 />  
