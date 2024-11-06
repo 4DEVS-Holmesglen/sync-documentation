@@ -21,8 +21,8 @@ const Header = () => {
           <Nav>
           <Nav.Link className={styles.navLink} as={Link} to='/'>Home</Nav.Link>
           { /* <Nav.Link className={styles.navLink} as={Link} to='/uicompo'>Customization</Nav.Link> */}
-            <Nav.Link className={styles.navLink} as={Link} to='https://github.com/4DEVS-Holmesglen/Sync-test'>Documentation</Nav.Link>
-            <Nav.Link className={styles.navLink}  as={Link} to='https://github.com/4DEVS-Holmesglen/4devs-alert-btn-component'><FaGithub /></Nav.Link>
+            <Nav.Link className={styles.navLink} as={Link} to='https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main'>Documentation</Nav.Link>
+            <Nav.Link className={styles.navLink}  as={Link} to='https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main'><FaGithub /></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
