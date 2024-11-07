@@ -13,13 +13,13 @@ const Home = () => {
         title="Sync Ui Component"
         content="Add some flair to your projects by trying our dazzling yet practical Button & Alert components! Built with user interactivity and accessibility in mind, choose from an array of themes/variant types pertaining to each level of action severity, along with customizable options to tailor and enhance the functionality of each component."
         link="Get Started"
-        linkTo="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main"
+        linkTo="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC?tab=readme-ov-file#installation"
       />
       
 
       {/* Alert Component Section */}
       <div className={styles.componentSection}>
-        <h2 className={styles.sectionHeader}>AlertBoxes</h2>
+        <h2 className={styles.sectionHeader}>AlertBox Collections</h2>
         <Row className={styles.alertContainer}>
           <Col xs={12} md={4}>
             <Alert 
@@ -82,28 +82,28 @@ const Home = () => {
 
           <Button 
           type="button" 
-          path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main" variant="default" 
+          path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC?tab=readme-ov-file#button-component" variant="default" 
           hoverColor="#1e293b">
             Sync Button
           </Button>
 
           <Button 
           type="button" 
-          path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main" variant="primary" 
+          path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC?tab=readme-ov-file#button-component" variant="primary" 
           hoverColor="#172554">
             Sync Button
           </Button>
 
           <Button 
           type="button" 
-          path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main" variant="success" 
+          path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC?tab=readme-ov-file#button-component" variant="success" 
           hoverColor="green">
             Sync Button
           </Button>
 
           <Button 
           type="button" 
-          path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC/tree/main" variant="warning" 
+          path="https://github.com/4DEVS-Holmesglen/4DEVS-SYNC?tab=readme-ov-file#button-component" variant="warning" 
           hoverColor="#7f1d1d">
             Sync Button
           </Button>
@@ -248,6 +248,7 @@ const Home = () => {
               </tr>
             </tbody>
           </table>
+          
         </div>
       </div>
     </div>
