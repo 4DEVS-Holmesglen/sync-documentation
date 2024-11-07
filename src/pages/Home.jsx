@@ -75,6 +75,8 @@ const Home = () => {
              variant="primary"
              hoverColor="#172554"
              >Sync Button</Button>
+
+             
              </Col>
              <Col xs={12} className="text-center">
 
