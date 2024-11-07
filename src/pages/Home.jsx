@@ -241,6 +241,11 @@ const Home = () => {
                 <td className={styles.tableCell}>string</td>
                 <td className={styles.tableCell}>Variant of the button (e.g., default, success, warning).</td>
               </tr>
+              <tr className={styles.tableRow}>
+                <td className={styles.tableCell}>btnColor</td>
+                <td className={styles.tableCell}>string</td>
+                <td className={styles.tableCell}>Variant of the close button ( X icon ) You can customize the colour by using colours hex code.</td>
+              </tr>
             </tbody>
           </table>
         </div>
