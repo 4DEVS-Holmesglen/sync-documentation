@@ -1,6 +1,9 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
+
 import { Button, Alert, AlertDialog } from '@holmesdev/sync';
+
+
 import TuBox from '../components/common/TuBox';
 import * as styles from './Home.css';
 
@@ -22,6 +25,7 @@ const Home = () => {
         <h2 className={styles.sectionHeader}>AlertBox Collections</h2>
         <Row className={styles.alertContainer}>
           <Col xs={12} md={4}>
+            
             <Alert 
             title="Sync Alert" 
             body="This is an Alert from Sync. Feel free to try it out!" status="defaultDark" />
@@ -159,6 +163,7 @@ const Home = () => {
       <div className={styles.componentSection}>
         <h2 className={styles.sectionHeader}>AlertDialog Collections</h2>
         <div className={styles.alertDialogContainer}>
+
           <AlertDialog 
             title="Sync AlertDialog" 
             body="Hold up! Looks like a couple fields need a bit more love."
@@ -168,6 +173,7 @@ const Home = () => {
             children="Open The alert"
             buttonVariant="success" 
           />
+
           <AlertDialog 
             title="Sync AlertDialog"
             body="Hold up! Looks like a couple fields need a bit more love."
@@ -177,6 +183,7 @@ const Home = () => {
             children="Open The alert"
             buttonVariant="default"
           />
+          
           <AlertDialog 
             title="Sync AlertDialog"
             body="Hold up! Looks like a couple fields need a bit more love."
